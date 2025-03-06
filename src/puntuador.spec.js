@@ -17,6 +17,9 @@ describe("Marcador de puntaje para Tennis", () => {
         expect(obtenerScore(3, 0)).toEqual("40-0");
     });
 
+    it("Deberia devolver 0-15", () => {
+        expect(obtenerScore(0, 1)).toEqual("0-15");
+    });
 });
 
 
