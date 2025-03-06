@@ -1,9 +1,9 @@
-function puntuador(a, b) {
-    if (a === 0 && b === a)
+function obtenerScore(score1, score2) {
+    if (score1 === 0 && score2 === score1)
         return "Love-Love";
-    if(a === 1 && b === 0)
+    if(score1 === 1 && score2 === 0)
         return "15-0";
     return "30-0";
 }
 
-export default puntuador;
+export default obtenerScore;
