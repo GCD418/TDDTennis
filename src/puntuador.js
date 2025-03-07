@@ -22,6 +22,8 @@ function obtenerScore(score1, score2) {
     if(score2 === score1 + 1 && score2 >= 4)
         return "Adv for P2";
     
+    if(score1 >= 4 && score1 >= score2 + 2)
+        return "Game for P1";
     return `${obtenerPuntuacion(score1)}-${obtenerPuntuacion(score2)}`;
 }
 
