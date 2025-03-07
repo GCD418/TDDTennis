@@ -14,6 +14,8 @@ function obtenerScore(score1, score2) {
         return "Love-Love";
     if(score1 >= 3 && score2 === score1)
         return "DEUCE";
+    if(score1 === score2 + 1 && score1 >= 4)
+        return "Adv for P1";
     return `${obtenerPuntuacion(score1)}-${obtenerPuntuacion(score2)}`;
 }
 

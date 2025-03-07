@@ -34,6 +34,10 @@ describe("Marcador de puntaje para Tennis", () => {
         expect(obtenerScore(4, 4)).toEqual("DEUCE");
     });
 
+    it("Deberia devolver Adv for P1", () => {
+        expect(obtenerScore(4, 3)).toEqual("Adv for P1");
+    });
+
 
 });
 
