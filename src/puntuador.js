@@ -24,6 +24,10 @@ function obtenerScore(score1, score2) {
     
     if(score1 >= 4 && score1 >= score2 + 2)
         return "Game for P1";
+
+    if(score2 >= 4 && score2 >= score1 + 2)
+        return "Game for P2";
+
     return `${obtenerPuntuacion(score1)}-${obtenerPuntuacion(score2)}`;
 }
 
