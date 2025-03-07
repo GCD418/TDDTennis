@@ -12,6 +12,8 @@ obtenerPuntuacion = (score) => {
 function obtenerScore(score1, score2) {
     if (score1 === 0 && score2 === score1)
         return "Love-Love";
+    if(score1 >= 3 && score2 === score1)
+        return "DEUCE";
     return `${obtenerPuntuacion(score1)}-${obtenerPuntuacion(score2)}`;
 }
 

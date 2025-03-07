@@ -20,11 +20,16 @@ describe("Marcador de puntaje para Tennis", () => {
     it("Deberia devolver 0-15", () => {
         expect(obtenerScore(0, 1)).toEqual("0-15");
     });
-    
+
 
     it("Deberia devolver 15-30", () => {
         expect(obtenerScore(1, 2)).toEqual("15-30");
     });
+
+    it("Deberia devolver DEUCE", () => {
+        expect(obtenerScore(3, 3)).toEqual("DEUCE");
+    });
+
 
 });
 
